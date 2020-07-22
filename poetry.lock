@@ -450,7 +450,7 @@ pygments = ">=2.4,<3.0"
 typing_extensions = ">=3.6,<4.0"
 
 [metadata]
-content-hash = "ddc350468f82f9cd6a734f3beb723cd83dd722e6dd8e7ae02641ac9fe4d4f500"
+content-hash = "7c0e9e3a2f476de738fabb0c04e215ad546ce7065035fd859c66d220f6fda091"
 python-versions = "^3.8"
 
 [metadata.files]

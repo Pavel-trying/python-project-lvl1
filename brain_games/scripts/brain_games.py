@@ -1,7 +1,7 @@
 import sys
 sys.path.append("/home/pavel/python-project-lvl1/brain_games")
 
-from cli import welcome_user
+from cli.py import welcome_user
 
 def main():
     print('Welcome to the Brain Games!')
