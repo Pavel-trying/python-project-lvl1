@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Pavel-trying_brain_games"
-version = "0.6.0"
+version = "0.7.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 packages = [
@@ -18,7 +18,7 @@ flake8 = "^3.8.3"
 isort = "<5"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain_games = "brain_games.scripts.brain_games:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
