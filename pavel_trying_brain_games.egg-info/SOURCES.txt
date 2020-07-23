@@ -8,4 +8,5 @@ pavel_trying_brain_games.egg-info/PKG-INFO
 pavel_trying_brain_games.egg-info/SOURCES.txt
 pavel_trying_brain_games.egg-info/dependency_links.txt
 pavel_trying_brain_games.egg-info/entry_points.txt
+pavel_trying_brain_games.egg-info/requires.txt
 pavel_trying_brain_games.egg-info/top_level.txt
