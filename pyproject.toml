@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Pavel-trying_brain_games"
-version = "0.7.0"
+version = "0.8.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
 packages = [
@@ -15,10 +15,10 @@ prompt = "^0.4.1"
 [tool.poetry.dev-dependencies]
 wemake-python-styleguide = "^0.14.0"
 flake8 = "^3.8.3"
-isort = "<5"
+isort = "<4"
 
 [tool.poetry.scripts]
-brain_games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.brain_games:main"
 
 [build-system]
 requires = ["poetry>=0.12"]
