@@ -4,7 +4,7 @@ def greeting_calc():
 What is the result of the expression?
 ''')
     name, welcome = welcome_user()
-    print(welcome)
+    print('\n' + welcome)
     return name
 
 

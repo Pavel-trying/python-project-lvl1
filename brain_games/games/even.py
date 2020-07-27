@@ -4,7 +4,7 @@ def greeting():
 Answer "yes" if number even otherwise answer "no".
 ''')
     name, welcome = welcome_user()
-    print(welcome)
+    print('\n' + welcome)
     return name
 
 
@@ -18,7 +18,7 @@ def random_number(name):
     correct_yes = ("Correct answer was 'yes'\nLet's try again, " + name + '!')
     while numbs_of_correct_answers != 3:
         number = randint(1, 99)
-        print('\nQuestion: ' + str(number))
+        print('Question: ' + str(number))
         answer = prompt.string('Your answer: ')
         if number % 2 != 0 and answer == 'yes':
             return print(yes_wrong + correct_no)
