@@ -1,3 +1,6 @@
 [console_scripts]
-brain-games = brain_games.scripts.brain_games:main
+brain_calc = brain_games.scripts.brain_calc:main
+brain_even = brain_games.scripts.brain_even:main
+brain_games = brain_games.scripts.brain_games:main
+brain_gcd = brain_games.scripts.brain_gcd:main
 

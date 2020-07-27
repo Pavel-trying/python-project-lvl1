@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: pavel-trying-brain-games
-Version: 0.6.0
+Version: 0.2.9
 Summary: UNKNOWN
 Home-page: UNKNOWN
 Author: Your Name
@@ -8,4 +8,4 @@ Author-email: you@example.com
 License: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
-Requires-Python: >=3.8,<4.0
+Requires-Python: >=3.6,<4.0
