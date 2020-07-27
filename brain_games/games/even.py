@@ -1,13 +1,11 @@
 def greeting():
-    import sys
-    sys.path.append("/home/pavel/python-project-lvl1/brain_games")
-    from cli import welcome_user # noqa
+    from cli import welcome_user
     print('''Welcome to the Brain Games!
 Answer "yes" if number even otherwise answer "no".
 ''')
     name, welcome = welcome_user()
     print(welcome)
-    return name, welcome
+    return name
 
 
 def random_number(name):
@@ -19,7 +17,7 @@ def random_number(name):
     no_wrong = ("'no' is wrong answer ;(. ")
     correct_yes = ("Correct answer was 'yes'\nLet's try again, " + name + '!')
     while numbs_of_correct_answers != 3:
-        number = randint(0, 99)
+        number = randint(1, 99)
         print('\nQuestion: ' + str(number))
         answer = prompt.string('Your answer: ')
         if number % 2 != 0 and answer == 'yes':
