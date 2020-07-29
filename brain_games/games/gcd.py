@@ -1,4 +1,4 @@
-def greeting_gcd():
+def greeting_for_gcd_game():
     from brain_games.games.cli import welcome_user
     print('''Welcome to the Brain Games!
 Find the greatest common divisor of given numbers.
@@ -8,7 +8,7 @@ Find the greatest common divisor of given numbers.
     return name
 
 
-def random_num_gcd(name):
+def random_num_for_gcd_game(name):
     from random import randint
     import prompt
     numbs_of_correct_answers = 0
@@ -27,6 +27,7 @@ def random_num_gcd(name):
             print('Correct!')
             numbs_of_correct_answers += 1
         else:
+            # разделил строку на три, потому что линтер ругается на ее длину
             wrong = ('"' + str(answer) + '"' + ' is wrong answer ')
             corr = (';(. Correct answer was ' + '"' + str(result) + '"' + '.')
             try_again = ("\nLet's try again, " + name + '!')

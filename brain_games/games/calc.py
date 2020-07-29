@@ -1,4 +1,4 @@
-def greeting_calc():
+def greeting_for_calc_game():
     from brain_games.games.cli import welcome_user
     print('''Welcome to the Brain Games!
 What is the result of the expression?
@@ -8,7 +8,7 @@ What is the result of the expression?
     return name
 
 
-def random_example(name):
+def random_example_for_calc_game(name):
     from random import randint, choice
     import prompt
     numbs_of_correct_answers = 0
@@ -31,6 +31,7 @@ def random_example(name):
         else:
             result = firstNumMult * secNumMult
             print('Question: ' + str(firstNumMult) + ' * ' + str(secNumMult))
+            # разделил строку на три, потому что линтер ругается на ее длинну
         answer = prompt.string('Your answer: ')
         wrong_txt = ('"' + str(answer) + '"' + ' is wrong answer ')
         corr_txt = (';(. Correct answer was ' + '"' + str(result) + '"' + '.')

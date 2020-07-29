@@ -1,4 +1,4 @@
-def greeting_prime():
+def greeting_for_prime_game():
     from brain_games.games.cli import welcome_user
     print('''Welcome to the Brain Games!
 Answer "yes" if given number is prime. Otherwise answer "no".
@@ -8,7 +8,7 @@ Answer "yes" if given number is prime. Otherwise answer "no".
     return name
 
 
-def random_prime(name):
+def random_for_prime_game(name):
     from random import randint
     import prompt
     numbs_of_correct_answers = 0
@@ -28,6 +28,7 @@ def random_prime(name):
             print('Correct!')
             numbs_of_correct_answers += 1
         else:
+            # разделил строку на три, потому что линтер ругается на ее длину
             wrong = ('"' + str(answer) + '"' + ' is wrong answer ')
             corr = (';(. Correct answer was ' + '"' + str(result) + '"' + '.')
             try_again = ("\nLet's try again, " + name + '!')
