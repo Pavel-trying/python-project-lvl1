@@ -1,6 +1,4 @@
-import sys
-sys.path.append("/home/pavel/python-project-lvl1/brain_games/games")
-from gcd import greeting_gcd, random_num_gcd # noqa
+from brain_games.games.gcd import greeting_gcd, random_num_gcd
 
 
 def main():

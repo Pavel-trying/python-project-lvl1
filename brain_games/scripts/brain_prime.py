@@ -1,6 +1,4 @@
-import sys
-sys.path.append("/home/pavel/python-project-lvl1/brain_games/games")
-from prime import greeting_prime, random_prime # noqa
+from brain_games.games.prime import greeting_prime, random_prime
 
 
 def main():

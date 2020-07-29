@@ -1,5 +1,5 @@
 def greeting_prime():
-    from cli import welcome_user
+    from brain_games.games.cli import welcome_user
     print('''Welcome to the Brain Games!
 Answer "yes" if given number is prime. Otherwise answer "no".
 ''')

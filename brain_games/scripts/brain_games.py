@@ -1,6 +1,4 @@
-import sys
-sys.path.append("/home/pavel/python-project-lvl1/brain_games/games")
-from cli import welcome_user # noqa
+from brain_games.games.cli import welcome_user
 
 
 def main():

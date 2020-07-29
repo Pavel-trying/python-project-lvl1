@@ -1,3 +1,3 @@
 # -*- coding:utf-8 -*-
 
-"""Games project"""
+"""Games examples."""

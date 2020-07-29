@@ -1,6 +1,4 @@
-import sys
-sys.path.append("/home/pavel/python-project-lvl1/brain_games/games")
-from calc import greeting_calc, random_example # noqa
+from brain_games.games.calc import greeting_calc, random_example
 
 
 def main():

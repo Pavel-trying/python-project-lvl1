@@ -1,5 +1,5 @@
 def greeting_gcd():
-    from cli import welcome_user
+    from brain_games.games.cli import welcome_user
     print('''Welcome to the Brain Games!
 Find the greatest common divisor of given numbers.
 ''')

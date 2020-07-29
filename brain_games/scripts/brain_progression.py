@@ -1,6 +1,5 @@
-import sys
-sys.path.append("/home/pavel/python-project-lvl1/brain_games/games")
-from progression import greeting_progression, random_progression # noqa
+from brain_games.games.progression import greeting_progression
+from brain_games.games.progression import random_progression
 
 
 def main():
