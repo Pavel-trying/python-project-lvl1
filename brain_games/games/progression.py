@@ -1,13 +1,3 @@
-def greeting_for_progression_game():
-    from brain_games.games.cli import welcome_user
-    print('''Welcome to the Brain Games!
-What number is missing in the progression?
-''')
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def random_for_progression_game(name):
     from random import randint
     import prompt

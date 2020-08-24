@@ -1,10 +1,8 @@
-from brain_games.games.prime import greeting_for_prime_game
-from brain_games.games.prime import random_for_prime_game
+from brain_games.engine import run
 
 
 def main():
-    name = greeting_for_prime_game()
-    random_for_prime_game(name)
+    run('prime')
 
 
 if __name__ == '__main__':

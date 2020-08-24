@@ -1,10 +1,8 @@
-from brain_games.games.progression import greeting_for_progression_game
-from brain_games.games.progression import random_for_progression_game
+from brain_games.engine import run
 
 
 def main():
-    name = greeting_for_progression_game()
-    random_for_progression_game(name)
+    run('progression')
 
 
 if __name__ == '__main__':

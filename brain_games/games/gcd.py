@@ -1,13 +1,3 @@
-def greeting_for_gcd_game():
-    from brain_games.games.cli import welcome_user
-    print('''Welcome to the Brain Games!
-Find the greatest common divisor of given numbers.
-''')
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def random_num_for_gcd_game(name):
     from random import randint
     import prompt

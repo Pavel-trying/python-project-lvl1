@@ -1,13 +1,3 @@
-def greeting_for_calc_game():
-    from brain_games.games.cli import welcome_user
-    print('''Welcome to the Brain Games!
-What is the result of the expression?
-''')
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def random_example_for_calc_game(name):
     from random import randint, choice
     import prompt

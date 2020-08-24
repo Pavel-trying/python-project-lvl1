@@ -1,10 +1,8 @@
-from brain_games.games.even import greeting_for_even_game
-from brain_games.games.even import random_number_for_even_game
+from brain_games.engine import run
 
 
 def main():
-    name = greeting_for_even_game()
-    random_number_for_even_game(name)
+    run('even')
 
 
 if __name__ == '__main__':

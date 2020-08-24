@@ -1,13 +1,3 @@
-def greeting_for_prime_game():
-    from brain_games.games.cli import welcome_user
-    print('''Welcome to the Brain Games!
-Answer "yes" if given number is prime. Otherwise answer "no".
-''')
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def random_for_prime_game(name):
     from random import randint
     import prompt

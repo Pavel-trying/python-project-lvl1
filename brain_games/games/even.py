@@ -1,13 +1,3 @@
-def greeting_for_even_game():
-    from brain_games.games.cli import welcome_user
-    print('''Welcome to the Brain Games!
-Answer "yes" if number even otherwise answer "no".
-''')
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def random_number_for_even_game(name):
     from random import randint
     import prompt
