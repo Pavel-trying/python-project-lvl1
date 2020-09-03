@@ -18,5 +18,4 @@ def random_example_for_calc_game():
     else:
         result = firstNumMult * secNumMult
         question = str(firstNumMult) + ' * ' + str(secNumMult)
-
     return str(result), question
