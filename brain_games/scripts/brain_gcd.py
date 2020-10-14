@@ -1,8 +1,8 @@
-from brain_games.engine import run
+from brain_games.engine import run_gcd
 
 
 def main():
-    run('gcd')
+    run_gcd()
 
 
 if __name__ == '__main__':

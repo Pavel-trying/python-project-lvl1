@@ -1,8 +1,8 @@
-from brain_games.engine import run
+from brain_games.engine import run_progression
 
 
 def main():
-    run('progression')
+    run_progression()
 
 
 if __name__ == '__main__':
