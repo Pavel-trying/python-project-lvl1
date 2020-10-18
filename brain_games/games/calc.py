@@ -12,5 +12,5 @@ def random_example_for_calc_game():
         result = first_num - sec_num
     else:
         result = first_num * sec_num
-    question =  f"{str(first_num)} {choise_sign} {str(sec_num)}"
+    question = f"{str(first_num)} {choise_sign} {str(sec_num)}"
     return str(result), question, uniqe_text

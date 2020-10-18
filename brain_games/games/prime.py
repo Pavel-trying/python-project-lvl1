@@ -2,7 +2,7 @@ from random import randint
 
 
 def random_for_prime_game():
-        # разделил строку на две, потому что линтер ругается на длину
+    # разделил строку на две, потому что линтер ругается на длину
     uniqe_text = 'Answer "yes" if given number is prime. '
     uniqe_text += 'Otherwise answer "no".\n'
     question = randint(1, 100)
