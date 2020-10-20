@@ -1,9 +1,9 @@
 from brain_games.engine import run
-from brain_games.games.prime import random_for_prime_game
+from brain_games.games import prime
 
 
 def main():
-    run(random_for_prime_game)
+    run(prime)
 
 
 if __name__ == '__main__':

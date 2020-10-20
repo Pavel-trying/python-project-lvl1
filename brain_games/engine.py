@@ -2,20 +2,14 @@ from brain_games.games.cli import welcome_user
 import prompt
 
 
-def greeting(game):
-    result, question, uniqe_text = game()
-    print('Welcome to the Brain Games!')
-    print(uniqe_text)
-    name, welcome = welcome_user()
-    print('\n' + welcome)
-    return name
-
-
 def run(game):
     times_of_repeating = 3
-    name = greeting(game)
+    print('Welcome to the Brain Games!')
+    print(game.description())
+    name, welcome = welcome_user()
+    print('\n' + welcome)
     while times_of_repeating != 0:
-        result, question, uniqe_text = game()
+        result, question, = game.game_function()
         print('Question: ' + question)
         answer = prompt.string('Your answer: ')
         if result == answer:

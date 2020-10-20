@@ -1,10 +1,14 @@
 from random import randint
 
 
-def random_for_prime_game():
+def description():
     # разделил строку на две, потому что линтер ругается на длину
     uniqe_text = 'Answer "yes" if given number is prime. '
     uniqe_text += 'Otherwise answer "no".\n'
+    return(uniqe_text)
+
+
+def game_function():
     question = randint(1, 100)
     index = question
     for n in range(index + 1):
@@ -14,4 +18,4 @@ def random_for_prime_game():
                 break
         else:
             result = 'yes'
-    return result, str(question), uniqe_text
+    return result, str(question)

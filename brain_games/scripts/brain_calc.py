@@ -1,9 +1,9 @@
 from brain_games.engine import run
-from brain_games.games.calc import random_example_for_calc_game
+from brain_games.games import calc
 
 
 def main():
-    run(random_example_for_calc_game)
+    run(calc)
 
 
 if __name__ == '__main__':

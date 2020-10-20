@@ -1,8 +1,12 @@
 from random import randint
 
 
-def random_for_progression_game():
+def description():
     uniqe_text = 'What number is missing in the progression?\n'
+    return(uniqe_text)
+
+
+def game_function():
     start_num = randint(1, 100)
     position_of_indefinite_num = randint(1, 9)
     value_of_progression = randint(1, 30)
@@ -23,4 +27,4 @@ def random_for_progression_game():
             start_num += value_of_progression
             question += (' ' + str(start_num))
             index_of_repeats += 1
-    return str(result), question, uniqe_text
+    return str(result), question
