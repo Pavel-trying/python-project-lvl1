@@ -1,16 +1,14 @@
 from random import randint
 
 
-def description():
-    uniqe_text = 'Answer "yes" if number even otherwise answer "no".\n'
-    return(uniqe_text)
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def game_function():
-    number = randint(1, 99)
-    question = number
-    if number % 2 != 0:
-        result = 'no'
-    elif number % 2 == 0:
-        result = 'yes'
+def get_question_and_answer():
+    question = randint(1, 99)
+    result = 'yes'if is_even(question) else 'no'
     return result, str(question)
+
+
+def is_even(num):
+    return num % 2 == 0

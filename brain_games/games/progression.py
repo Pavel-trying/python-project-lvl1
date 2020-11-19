@@ -1,12 +1,10 @@
 from random import randint
 
 
-def description():
-    uniqe_text = 'What number is missing in the progression?\n'
-    return(uniqe_text)
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def game_function():
+def get_question_and_answer():
     start_num = randint(1, 100)
     position_of_indefinite_num = randint(1, 9)
     value_of_progression = randint(1, 30)

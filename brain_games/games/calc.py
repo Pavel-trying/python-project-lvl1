@@ -1,12 +1,10 @@
 from random import randint, choice
 
 
-def description():
-    uniqe_text = 'What is the result of the expression?\n'
-    return(uniqe_text)
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def game_function():
+def get_question_and_answer():
     choise_sign = choice('-+*')
     first_num = randint(25, 50)
     sec_num = randint(1, 25)

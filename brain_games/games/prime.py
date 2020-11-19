@@ -1,21 +1,22 @@
 from random import randint
 
 
-def description():
-    # разделил строку на две, потому что линтер ругается на длину
-    uniqe_text = 'Answer "yes" if given number is prime. '
-    uniqe_text += 'Otherwise answer "no".\n'
-    return(uniqe_text)
+# разделил строку на две, потому что линтер ругается на длину
+part_1_of_descriprion = 'Answer "yes" if given number is prime. '
+part_2_of_descriprion = 'Otherwise answer "no".'
+DESCRIPTION = part_1_of_descriprion + part_2_of_descriprion
 
 
-def game_function():
+def get_question_and_answer():
     question = randint(1, 100)
-    index = question
-    for n in range(index + 1):
-        for x in range(2, n):
-            if n % x == 0 and n == question:
-                result = "no"
-                break
-        else:
-            result = 'yes'
+    result = 'yes'if is_num_prime(question) else 'no'
     return result, str(question)
+
+
+def is_num_prime(num):
+    counter = 2
+    while counter <= num / 2:
+        if num % counter == 0:
+            return False
+        counter += 1
+    return True
