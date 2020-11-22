@@ -1,4 +1,3 @@
-from brain_games.games.cli import welcome_user
 import prompt
 
 
@@ -6,7 +5,8 @@ def run(game):
     times_of_repeating = 3
     print('Welcome to the Brain Games!')
     print(game.DESCRIPTION + '\n')
-    name, welcome = welcome_user()
+    name = prompt.string('May I have your name? ')
+    welcome = f'Hello, {name}'
     print('\n' + welcome)
     while times_of_repeating != 0:
         result, question, = game.get_question_and_answer()
