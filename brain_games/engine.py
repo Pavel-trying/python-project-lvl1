@@ -20,4 +20,4 @@ def run(game):
             correct_was = f'Correct answer was "{result}"'
             try_again = f"\nLet's try again, {name}!"
             return print(answer_is_wrong+correct_was+try_again)
-    return(print('Congratulations, ' + name + '!'))
+    print('Congratulations, ' + name + '!')
