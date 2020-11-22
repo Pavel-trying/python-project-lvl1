@@ -1,10 +1,9 @@
 from random import randint
+import re
 
 
-# разделил строку на две, потому что линтер ругается на длину
-part_1_of_descriprion = 'Answer "yes" if given number is prime. '
-part_2_of_descriprion = 'Otherwise answer "no".'
-DESCRIPTION = part_1_of_descriprion + part_2_of_descriprion
+DESCRIPTION = re.sub("\n", '', '''Answer "yes" if given number is prime.
+ Otherwise answer "no".''')
 
 
 def get_question_and_answer():
