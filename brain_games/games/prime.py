@@ -13,7 +13,8 @@ def get_question_and_answer():
 
 
 def is_prime(num):
-    if num <= 0 or num == 1:
+    print(num)
+    if num <= 1:
         return False
     else:
         counter = 2
