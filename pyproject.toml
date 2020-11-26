@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Pavel-trying_brain_games"
-version = "0.5.5"
+version = "0.5.6"
 description = "Brain games it is a five simple games for training your brain ;)"
 authors = [" Pavel-trying <kplyft@gmail.com>"]
 classifiers = [
