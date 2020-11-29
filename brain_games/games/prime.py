@@ -2,8 +2,8 @@ from random import randint
 import re
 
 
-DESCRIPTION = re.sub("\n", '', '''Answer "yes" if given number is prime.
- Otherwise answer "no".''')
+DESCRIPTION = 'Answer "yes" if given number is prime.' \
+                ' Otherwise answer "no".'
 
 
 def get_question_and_answer():
@@ -22,3 +22,4 @@ def is_prime(num):
                 return False
             counter += 1
         return True
+
