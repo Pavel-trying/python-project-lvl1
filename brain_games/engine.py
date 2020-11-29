@@ -22,4 +22,3 @@ Let's try again, {name}!'''
             print(answer_is_wrong)
             return
     print('Congratulations, ' + name + '!')
-

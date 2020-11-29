@@ -1,5 +1,4 @@
 from random import randint
-import re
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime.' \
@@ -22,4 +21,3 @@ def is_prime(num):
                 return False
             counter += 1
         return True
-
