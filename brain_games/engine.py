@@ -20,6 +20,6 @@ def run(game):
             answer_is_wrong = f'"{answer}" is wrong answer ;(. ' \
                                 f'Correct answer was "{result}"'
             print(answer_is_wrong)
-            print(f"'Let's try again, {name}!")
+            print(f"Let's try again, {name}!")
             return
     print('Congratulations, ' + name + '!')
