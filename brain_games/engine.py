@@ -17,9 +17,10 @@ def run(game):
             print('Correct!')
             number_of_round += 1
         else:
-            answer_is_wrong = f'"{answer}" is wrong answer ;(. ' \
-                                f'Correct answer was "{result}"'
-            print(answer_is_wrong)
+            print(
+                f'"{answer}" is wrong answer ;(. '
+                f'Correct answer was "{result}"'
+            )
             print(f"Let's try again, {name}!")
             return
     print('Congratulations, ' + name + '!')
